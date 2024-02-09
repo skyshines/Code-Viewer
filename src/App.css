@@ -1,0 +1,174 @@
+/* home page css */
+
+.homePageWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* for wrapper to be in middle of the page */
+  height: 100vh 
+}
+
+.formWrapper{
+  background: #282a36;
+  /* add some padding  */
+  padding: 20px;
+  /* to make border of wrapper a little bit round */
+  border-radius: 10px;
+  width: 400px;
+  /* for making wrapper responsive */
+  max-width: 90%;
+}
+
+footer{
+  /* to keep footer fixed at bottom */
+  position: fixed;
+  bottom: 0;
+}
+
+footer a{
+  /* for giving color to footer link */
+  color: #E7870C;
+}
+
+footer a:hover {
+  color: #894900;
+}
+
+.inputGroup {
+  /* for items to be aligned */
+display: flex;
+/* flex direction should be column */
+flex-direction: column;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.homepageLogo {
+  /* reduce logo size */
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.inputBox {
+  /* to increase the size of the box inside */
+padding: 10px;
+border-radius: 5px;
+outline: none;
+border: none;
+/* to give space beneath the box */
+margin-bottom: 14px;
+background: #eee;
+/* for text in the box */
+font-size: 16px;
+font-weight: bold;
+}
+
+.btn{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.joinBtn , .leaveBtn{
+  background: #e7870c;
+  /* to make button size small */
+  width: 100px;
+  /* to move it to right */
+  margin-left: auto;
+}
+
+.joinBtn:hover , .leaveBtn:hover{
+  /* change color on hovering over button */
+  background: #894900;
+}
+
+.createInfo {
+  /* first give margin 0 up and down and auto left and right to make it in center */
+  margin: 0 auto;
+  /* then give top margin  */
+  margin-top: 20px;
+}
+
+.createNewBtn {
+  color: #E7870C;
+  text-decoration: none;
+  border-bottom: 1px solid #E7870C;
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover {
+  color: #894900;
+  border-color: #894900;
+}
+
+/* Editor page css */
+/* 1. aside wrap */
+
+.mainWrap {
+  display: grid;
+  /* fixing left grid and giving remaining space to other */
+  grid-template-columns: 230px 1fr;
+}
+
+.aside {
+  background: #1c1e29;
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+ .asideInner {
+   /* for shifting buttons to bottom */
+  flex: 1;
+} 
+
+.clientsList {
+  display: flex;
+  align-items: center;
+  /* flex wrap is used so if 3rd client is added then it is added below  */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.userName {
+  margin-top: 10px;
+}
+
+.logo{
+border-bottom: 1px solid #424242;
+padding-bottom: 10px;
+}
+
+.logoImage {
+  height: 60px;
+}
+
+.leaveBtn {
+  margin-top: 20px;
+width: 100%;
+}
+
+/* 2. editor wrap */
+/* codemirror is the class of wrapper */
+.CodeMirror {
+ min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
+}
